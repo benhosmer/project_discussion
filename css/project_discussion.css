@@ -1,0 +1,9 @@
+// CSS File for Project Discussion
+
+#features-menu li a.icon-project_discussion span.icon {
+	background-color: blue;
+}
+
+#features-menu li a.icon-project_discussion span.icon {
+	background:transparent url(img/icon.png) no-repeat;
+}

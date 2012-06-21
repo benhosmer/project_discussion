@@ -1,0 +1,10 @@
+<?php
+
+include_once('project_discussion.features.inc');
+
+/**
+* Implementation of hook_init().
+*/
+function project_discussion_init() {
+  drupal_add_css(drupal_get_path('module', 'project_discussion') .'/css/project_discussion.css');
+}
