@@ -44,7 +44,7 @@ function project_discussion_context_default_contexts() {
 
   // Translatables
   // Included for use with string extractors like potx.
-  t('project_discussion');
+  t('Project Discussion');
   $export['project_discussion_listing'] = $context;
 
   return $export;

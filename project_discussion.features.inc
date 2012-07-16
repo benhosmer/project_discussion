@@ -19,9 +19,9 @@ function project_discussion_ctools_plugin_api() {
 function project_discussion_node_info() {
   $items = array(
     'project_discussion' => array(
-      'name' => t('project_discussion entry'),
+      'name' => t('Project Discussion'),
       'module' => 'features',
-      'description' => t('A project_discussion is a regularly updated journal or diary made up of individual posts shown in reversed chronological order. Each member of the site may create and maintain a project_discussion.'),
+      'description' => t('A <em>Project Discussion</em> is a regularly updated journal or diary made up of individual posts shown in reversed chronological order specific to a project contained within a group.'),
       'has_title' => '1',
       'title_label' => t('Title'),
       'has_body' => '1',
@@ -39,5 +39,8 @@ function project_discussion_node_info() {
 function project_discussion_views_api() {
   return array(
     'api' => '2',
+  );
+}
+api' => '2',
   );
 }

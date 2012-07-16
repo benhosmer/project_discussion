@@ -452,7 +452,7 @@ function project_discussion_views_default_views() {
   $handler->override_option('cache', array(
     'type' => 'none',
   ));
-  $handler->override_option('title', 'project_discussion');
+  $handler->override_option('title', 'Project Discussions');
   $handler->override_option('use_pager', '1');
   $handler->override_option('row_plugin', 'node');
   $handler = $view->new_display('page', 'Page', 'page_1');
@@ -924,8 +924,8 @@ function project_discussion_views_default_views() {
     t('Defaults'),
     t('Feed'),
     t('Page'),
+    t('Project Discussions'),
     t('more'),
-    t('project_discussion'),
     t('project_discussion teaser'),
     t('project_discussion teaser (list)'),
   );
