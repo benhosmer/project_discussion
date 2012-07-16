@@ -41,6 +41,3 @@ function project_discussion_views_api() {
     'api' => '2',
   );
 }
-api' => '2',
-  );
-}
