@@ -934,3 +934,4 @@ function project_discussion_views_default_views() {
 
   return $views;
 }
+
