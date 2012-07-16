@@ -1,14 +1,27 @@
 <?php
 
 /**
+ * Implementation of hook_ctools_plugin_api().
+ */
+function project_discussion_ctools_plugin_api() {
+  list($module, $api) = func_get_args();
+  if ($module == "context" && $api == "context") {
+    return array("version" => 3);
+  }
+  elseif ($module == "strongarm" && $api == "strongarm") {
+    return array("version" => 1);
+  }
+}
+
+/**
  * Implementation of hook_node_info().
  */
 function project_discussion_node_info() {
   $items = array(
     'project_discussion' => array(
-      'name' => t('Project Discussion'),
+      'name' => t('project_discussion entry'),
       'module' => 'features',
-      'description' => t('This content types works similar to the blog entry, but adds a node reference field linking this discussion to a particular project.'),
+      'description' => t('A project_discussion is a regularly updated journal or diary made up of individual posts shown in reversed chronological order. Each member of the site may create and maintain a project_discussion.'),
       'has_title' => '1',
       'title_label' => t('Title'),
       'has_body' => '1',

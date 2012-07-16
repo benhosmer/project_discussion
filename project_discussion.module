@@ -3,8 +3,29 @@
 include_once('project_discussion.features.inc');
 
 /**
-* Implementation of hook_init().
-*/
-function project_discussion_init() {
-  drupal_add_css(drupal_get_path('module', 'project_discussion') .'/css/project_discussion.css');
+ * Implementation of hook_help().
+ */
+function project_discussion_help($path) {
+  // Central help page content.
+  if ($path == 'help#project_discussion') {
+    $help = '<h3>'. t('project_discussion') .'</h3>';
+    $help .= '<p>'. t("The project_discussion lets your team communicate by posting updates and discussing issues. It is a great place for sharing progress, discussing challenges, and exploring ideas.") .'</p>';
+    $help .= '<p>'. t("To start a conversation navigate to the project_discussion and click the \"Add project_discussion post\" button. You will need to enter a title and some body content to your post. Then click \"Save\".") .'</p>';
+    return $help;
+  }
+
+  // Contextual help content.
+  if (context_isset('context', 'project_discussion_listing')) {
+    if ($path == 'node/add/project_discussion') {
+      $help = '';
+      $help .= '<h3>'. t('project_discussion') .'</h3>';
+      $help .= '<p>'. t("Post an entry to the project_discussion of this group. The post will be shared will all team members on the project_discussion, and they will be able to reply to it. You can optionally notify other group members by checking their name in the notifications field.") .'</p>';
+      return $help;
+    }
+    else {
+      $help = '<h3>'. t('project_discussion') .'</h3>';
+      $help .= '<p>'. t("The project_discussion lets your team communicate by posting updates and discussing issues. It is a great place for sharing progress, discussing challenges, and exploring ideas.") .'</p>';
+      return $help;
+    }
+  }
 }

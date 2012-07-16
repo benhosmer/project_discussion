@@ -10,7 +10,7 @@ function project_discussion_user_default_permissions() {
   $permissions['create project_discussion content'] = array(
     'name' => 'create project_discussion content',
     'roles' => array(
-      '0' => 'administrator',
+      '0' => 'admin',
       '1' => 'authenticated user',
       '2' => 'manager',
     ),
@@ -20,7 +20,7 @@ function project_discussion_user_default_permissions() {
   $permissions['delete own project_discussion content'] = array(
     'name' => 'delete own project_discussion content',
     'roles' => array(
-      '0' => 'administrator',
+      '0' => 'admin',
       '1' => 'authenticated user',
       '2' => 'manager',
     ),
@@ -30,7 +30,7 @@ function project_discussion_user_default_permissions() {
   $permissions['edit own project_discussion content'] = array(
     'name' => 'edit own project_discussion content',
     'roles' => array(
-      '0' => 'administrator',
+      '0' => 'admin',
       '1' => 'authenticated user',
       '2' => 'manager',
     ),
