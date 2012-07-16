@@ -921,13 +921,13 @@ function project_discussion_views_default_views() {
   $translatables['project_discussion_listing'] = array(
     t('Archive'),
     t('Block'),
-    t('project_discussion'),
-    t('project_discussion teaser'),
-    t('project_discussion teaser (list)'),
     t('Defaults'),
     t('Feed'),
     t('Page'),
     t('more'),
+    t('project_discussion'),
+    t('project_discussion teaser'),
+    t('project_discussion teaser (list)'),
   );
 
   $views[$view->name] = $view;
