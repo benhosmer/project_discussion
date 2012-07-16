@@ -83,7 +83,7 @@ function project_discussion_strongarm() {
 
   return $export;
 }
-true to make a default strongarm disabled initially */
+/* true to make a default strongarm disabled initially */
   $strongarm->api_version = 1;
   $strongarm->name = 'comment_subject_field_project_discussion';
   $strongarm->value = '0';
@@ -279,4 +279,4 @@ true to make a default strongarm disabled initially */
   $export['upload_project_discussion'] = $strongarm;
 
   return $export;
-}
+
