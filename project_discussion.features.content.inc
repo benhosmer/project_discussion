@@ -47,7 +47,7 @@ function project_discussion_content_default_fields() {
       'feed_ical' => 0,
       'project_discussion' => 0,
     ),
-    'advanced_view' => '--',
+    'advanced_view' => 'casetracker_projects',
     'advanced_view_args' => '',
     'widget' => array(
       'autocomplete_match' => 'contains',
