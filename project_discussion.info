@@ -1,5 +1,5 @@
 name = "Project Discussion"
-description = "The project_discussion lets you have a conversation about a project with your team."
+description = "The Project Discussion lets you have a conversation about a project with your team."
 core = "6.x"
 package = "Features"
 dependencies[] = "atrium_blog"
