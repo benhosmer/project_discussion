@@ -307,7 +307,7 @@ function project_discussion_views_default_views() {
       'style_options' => array(),
       'wildcard' => 'all',
       'wildcard_substitution' => 'All',
-      'title' => '%1\'s project_discussion',
+      'title' => '%1\'s Project Discussion',
       'default_argument_type' => 'fixed',
       'default_argument' => '',
       'validate_type' => 'none',
@@ -447,7 +447,7 @@ function project_discussion_views_default_views() {
   ));
   $handler->override_option('access', array(
     'type' => 'spaces_feature',
-    'spaces_feature' => 'project_discussion',
+    'spaces_feature' => 'Project Discussion',
   ));
   $handler->override_option('cache', array(
     'type' => 'none',
@@ -459,7 +459,7 @@ function project_discussion_views_default_views() {
   $handler->override_option('path', 'project_discussion');
   $handler->override_option('menu', array(
     'type' => 'normal',
-    'title' => 'project_discussion',
+    'title' => 'Project Discussion',
     'description' => '',
     'weight' => '0',
     'name' => 'features',

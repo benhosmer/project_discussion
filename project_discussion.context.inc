@@ -30,15 +30,15 @@ function project_discussion_context_default_contexts() {
   $context->reactions = array(
     'block' => array(
       'blocks' => array(
-        'views-blog_comments-block_1' => array(
+        'views-project_discussion_comments-block_1' => array(
           'module' => 'views',
-          'delta' => 'blog_comments-block_1',
+          'delta' => 'project_discussion_comments-block_1',
           'region' => 'right',
           'weight' => 0,
         ),
       ),
     ),
-    'menu' => 'project_discussion',
+    'menu' => 'Project Discussion',
   );
   $context->condition_mode = 0;
 
