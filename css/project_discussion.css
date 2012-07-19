@@ -7,3 +7,9 @@
 #features-menu li a.icon-project_discussion span.icon {
 	background:transparent url(img/icon.png) no-repeat;
 }
+
+span.spaces-feature.feature-project_discussion {
+	background:transparent url(img/icon.png) no-repeat;
+	background-size: 20px 20px;	
+}
+
