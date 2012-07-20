@@ -59,7 +59,7 @@ function project_discussion_content_default_fields() {
       ),
       'default_value_php' => NULL,
       'label' => 'Project',
-      'weight' => '31',
+      'weight' => '-2',
       'description' => 'Choose the project that this discussion relates to.',
       'type' => 'nodereference_select',
       'module' => 'nodereference',

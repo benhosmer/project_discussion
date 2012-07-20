@@ -89,16 +89,16 @@ function project_discussion_strongarm() {
   $strongarm->name = 'content_extra_weights_project_discussion';
   $strongarm->value = array(
     'title' => '-5',
-    'body_field' => '0',
-    'revision_information' => '20',
-    'author' => '20',
-    'options' => '25',
-    'comment_settings' => '30',
-    'menu' => '-2',
-    'taxonomy' => '-3',
-    'book' => '10',
-    'attachments' => '30',
-    'og_nodeapi' => '0',
+    'body_field' => '-3',
+    'revision_information' => '2',
+    'author' => '1',
+    'options' => '3',
+    'comment_settings' => '5',
+    'menu' => '-4',
+    'book' => '0',
+    'path' => '6',
+    'attachments' => '4',
+    'og_nodeapi' => '-1',
   );
   $export['content_extra_weights_project_discussion'] = $strongarm;
 
